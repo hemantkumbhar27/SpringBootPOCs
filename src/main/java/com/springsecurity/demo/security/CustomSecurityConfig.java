@@ -63,7 +63,6 @@ public class CustomSecurityConfig {
 //                        .loginPage("/login")  // Your login page
                         .defaultSuccessUrl("/hello", true)  // Redirects to /dashboard after login
                 )
-
                 .csrf(csrf -> csrf.disable());
         return http.build();
     }
